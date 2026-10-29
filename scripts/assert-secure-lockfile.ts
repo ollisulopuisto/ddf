@@ -2,8 +2,8 @@
 
 import fs from 'node:fs'
 import { dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
 import { exit } from 'node:process'
+import { fileURLToPath } from 'node:url'
 
 // Varmistaa, ettei pnpm-lock.yaml:ssä ole enää haavoittuvia minimatch-versioita.
 // minimatchin ReDoS-aukkojen korjaus on versiossa 9.0.7:
