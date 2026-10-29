@@ -3,8 +3,14 @@
   "type": "module",
   "private": true,
   "packageManager": "pnpm@9.0.5",
+  "pnpm": {
+    "overrides": {
+      "minimatch": "9.0.7"
+    }
+  },
   "scripts": {
-    "sync-ddf": "ts-node-esm ./scripts/sync-ddf.ts"
+    "sync-ddf": "ts-node-esm ./scripts/sync-ddf.ts",
+    "audit:lockfile": "ts-node scripts/assert-secure-lockfile.ts"
   },
   "dependencies": {
     "@deconz-community/cli": "^1.8.0",
@@ -17,12 +23,12 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.15.0",
-    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/eslintrc": "^3.3.7",
     "@types/crypto-js": "^4.2.2",
     "@types/degit": "^2.8.6",
     "@types/node": "^20.12.7",
     "@types/semver": "^7.5.8",
     "@types/uuid": "^9.0.8",
-    "eslint": "^9.1.1"
+    "eslint": "^9.39.5"
   }
 }
