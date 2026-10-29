@@ -3,10 +3,10 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import pkg from 'crypto-js'
 import degit from 'degit'
 import fg from 'fast-glob'
 import { v4 as uuidv4 } from 'uuid'
-import pkg from 'crypto-js'
 
 const { SHA256 } = pkg
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
